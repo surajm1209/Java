@@ -31,7 +31,7 @@ class Alpha1
 	}
 }
 
-public class LaunchException6 
+public class ThrowCatch 
 {
 	public static void main(String[] args) 
 	{

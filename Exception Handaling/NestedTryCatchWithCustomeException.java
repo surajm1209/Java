@@ -79,7 +79,7 @@ class Bank
 		}
 	}
 }
-public class LaunchCE {
+public class NestedTryCatchWithCustomeException {
 
 	public static void main(String[] args) {
 		 

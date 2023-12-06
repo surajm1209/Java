@@ -1,6 +1,4 @@
-//UncheckedException --> Compiler will not force us to handle(It will not be checked during compile time)
-//CheckedException--> it will be checked by compiler 
-public class LaunchException5 {
+public class ThrowsWithSleep {
 
 	public static void main(String[] args)throws Exception
 	{
