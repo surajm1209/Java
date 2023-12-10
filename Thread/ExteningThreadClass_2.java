@@ -6,7 +6,7 @@ class MyThread extends Thread {
     }
 }
 
-class ExteningThreadClass {
+class ExteningThreadClass_2 {
     public static void main(String... args) 
     {
         MyThread t = new MyThread();    // Thread instantiation

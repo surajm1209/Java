@@ -7,7 +7,7 @@ class MyRunnable implements Runnable {
     }
 }
 
-public class ImplementingRunnableInterface {
+public class ImplementingRunnableInterface_2 {
 
     public static void main(String... args) {
         MyRunnable r = new MyRunnable();
