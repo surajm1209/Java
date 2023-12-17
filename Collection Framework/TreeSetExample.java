@@ -16,8 +16,8 @@ public class TreeSetExample {
 		System.out.println(ts.higher(50));
 		System.out.println(ts.floor(50));
 		System.out.println(ts.lower(50));
+
 		System.out.println("******************");
-		
 		System.out.println(ts.ceiling(40));
 		System.out.println(ts.higher(40));
 		System.out.println(ts.floor(40));

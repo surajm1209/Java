@@ -21,7 +21,7 @@ class Student
 		return name;
 	}
 }
-public class ListOfStudents {
+public class GenericsExample {
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
