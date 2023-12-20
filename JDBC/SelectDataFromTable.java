@@ -32,18 +32,18 @@ public class SelectDataFromTable
                 ResultSet rs = stmt.executeQuery();
 
                 //Retriving a data
+                System.out.print("\tRoll\tName\tAge\tCity\n");
                 while(rs.next())
                 {
-                    System.err.print(rs.getInt("Roll"));
-                    System.err.print(" " + rs.getString("Name"));
-                    System.err.print(" " +rs.getInt("Age"));
-                    System.err.print(" " + rs.getString("City"));
+                    System.err.print("\t"+ rs.getInt("Roll"));
+                    System.err.print("\t" + rs.getString("Name"));
+                    System.err.print("\t" +rs.getInt("Age"));
+                    System.err.print("\t" + rs.getString("City"));
                     System.out.println();
                 }
                 //closing the connection
                 con.close();
-            }    
-            //Establishing the connection
+            } 
         } 
         catch (Exception e) 
         {
