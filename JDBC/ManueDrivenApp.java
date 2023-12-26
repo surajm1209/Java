@@ -73,6 +73,7 @@ public class ManueDrivenApp
                 System.out.println();
             }
             System.out.println("\t----------------------------------------------");
+            cleanUp(null,stmt,rs);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -101,6 +102,7 @@ public class ManueDrivenApp
             
             int rowAffected = statement.executeUpdate(sqlInsertQuery);
             System.out.println("No of rows affected is :: " + rowAffected);
+            cleanUp(null,statement,null);
         } 
         catch (Exception e) 
         {
@@ -134,6 +136,7 @@ public class ManueDrivenApp
             else
                 System.out.println("Student does not  exist with roll : "+ roll);
 
+            cleanUp(null,stmt,null);
         } 
         catch (Exception e) 
         {
@@ -213,6 +216,8 @@ public class ManueDrivenApp
             }
             else
                 System.out.println("Student does not  exist with roll : "+ roll);
+
+            cleanUp(null,stmt,rs);
        } 
        catch (Exception e) 
        {
