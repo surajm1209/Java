@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration page</title>
+</head>
+<body>
+	<h1 style='color:red; text-align: center;'>HTML to JSP to DB communication</h1>
+	<form action = './studenturl' method='post'>
+		<table  align='center' bgcolor='grey'>
+			<tr>
+				<td>Student Name</td>
+				<td>
+					<input type='text' name='sname'/>
+				</td>
+			</tr>
+			<tr>
+				<td>Student City</td>
+				<td>
+					<input type='text' name='scity'/>
+				</td>
+			</tr>
+			<tr>
+				<td>Student Age</td>
+				<td>
+					<input type='text' name='sage'/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type='submit' value='register' name='s1'/>
+					<a href='./studenturl?s1=link'>GET ALL STUDENTS</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
