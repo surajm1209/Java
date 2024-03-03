@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>DBCommunication</display-name>
+  <servlet>
+    <servlet-name>DbController</servlet-name>
+    <servlet-class>DbConnection</servlet-class>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>jdbc:mysql://127.0.0.1:3306/project_1</param-value>
+    </init-param>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>Suraj@1209</param-value>
+    </init-param>
+    <load-on-startup>10</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DbController</servlet-name>
+    <url-pattern>/db</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DBConnection</display-name>
+    <servlet-name>DBConnection</servlet-name>
+    <servlet-class>DBConnection</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DBConnection</servlet-name>
+    <url-pattern>/DBConnection</url-pattern>
+  </servlet-mapping>
+</web-app>
