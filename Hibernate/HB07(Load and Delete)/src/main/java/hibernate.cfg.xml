@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql:///MyHiber</property>
+		<property name="connection.user">root</property>
+		<property name="connection.password">Suraj@1209</property>
+		
+		<!-- OPTIONAL PROPERTIES FOR HIBERNATE -->
+
+		<!-- Prepare the query based on the mapping information for the underlying 
+			DATABASE -->
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+		<!--Inform HIBERNATE to display the query on the console it has generated 
+			internally -->
+		<property name="show_sql">true</property>
+
+
+		<!--Inform HIBERNATE to display the query on the console it has generated 
+			internally in proper format -->
+		<property name="format_sql">true</property>
+
+		<!-- Inform HIBERNATE to create/alter/drop the table -->
+		<property name="hbm2ddl.auto">update</property>
+		
+		<mapping class="com.practice.Model.Student"/>
+		
+	</session-factory>
+</hibernate-configuration>
